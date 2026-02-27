@@ -169,7 +169,7 @@
             ctx.scale(0.75, 0.75);
             ctx.font = "12px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
             ctx.fillText("Click Me:) ", 30, -5);
-            ctx.fillText("Tursun udriin ezeen! ", 28, 10);
+            ctx.fillText("Birthday Queen !", 28, 10);
             ctx.restore();
         },
         clear: function() {
@@ -181,7 +181,7 @@
         hover: function(x, y) {
             var ctx = this.tree.ctx;
             var pixel = ctx.getImageData(x, y, 1, 1);
-            return pixel.data[3] > 255
+            return pixel.data[3] == 255
         }
     }
 
@@ -702,7 +702,7 @@
             ctx.scale(0.75, 0.75);
             ctx.font = "12px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
             ctx.fillText("Click Me:) ", 30, -5);
-            ctx.fillText("Tursun udriin ezeen! ", 28, 10);
+            ctx.fillText("Birthday Queen !", 28, 10);
             ctx.restore();
         },
         clear: function() {
@@ -714,7 +714,7 @@
         hover: function(x, y) {
             var ctx = this.tree.ctx;
             var pixel = ctx.getImageData(x, y, 1, 1);
-            return pixel.data[3] > 255
+            return pixel.data[3] == 255
         }
     }
 
@@ -1080,4 +1080,3 @@ function timeElapse(date) {
 }
 
 })(window);
-
