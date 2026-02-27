@@ -1079,5 +1079,4 @@ function timeElapse(date) {
     $("#clock").html(result);
 }
 
-
 })(window);
